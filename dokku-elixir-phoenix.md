@@ -85,7 +85,17 @@ And `phoenix_static_buildpack.config`:
     node_version=5.3.0
     npm_version=2.10.1
     
-> **Note**: you do not need the phoenix static buildpack if you do not have assets (i.e., this is a REST API or you compiled your assets elsewhere).    
+> **Note**: you do not need the phoenix static buildpack if you do not have assets (i.e., this is a REST API or you compiled your assets elsewhere).
+
+And `app.json`:
+
+    {
+      "scripts": {
+        "dokku": {
+          "postdeploy": "mix ecto.migrate"
+        }
+      }
+    }
     
 ### Safe `prod.exs`    
 
@@ -150,5 +160,6 @@ dokku letsencrypt
 # Resources
 
 https://github.com/phoenixframework/phoenix_guides/blob/master/deployment/E_heroku.md
+https://dev.to/mplatts/deploying-phoenix-via-dokku-1gip
 http://www.cspags.com/deploying-elixir-phoenix-to-heroku/
 http://philippkueng.ch/deploy-a-phoenix-application-on-heroku.html
