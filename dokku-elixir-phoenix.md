@@ -1,6 +1,6 @@
 # Elixir and Phoenix on Dokku on Digital Ocean
 
-Create a new Digital Ocean box:
+Create a new [Vultr](https://www.vultr.com/) box:
 
 * Ubuntu 18.04 x64
 * $5 per month / 1GB / 1 CPU
