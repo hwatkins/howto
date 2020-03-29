@@ -38,7 +38,7 @@ Open a new SSH session as the `deploy` user:
 
     ssh deploy@111.222.333.444
         
-Next install dokku (http://dokku.viewdocs.io/dokku/getting-started/installation/)
+Next install dokku (http://dokku.viewdocs.io/dokku/getting-started/installation/) check version here (http://dokku.viewdocs.io/dokku/)
 
     wget https://raw.githubusercontent.com/dokku/dokku/v0.7.2/bootstrap.sh
     sudo DOKKU_TAG=v0.7.2 bash bootstrap.sh
