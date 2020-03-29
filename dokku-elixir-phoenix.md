@@ -50,10 +50,7 @@ Next run these dokku commands (still SSH as `deploy`):
     dokku apps:create yourappname
     sudo dokku plugin:install https://github.com/dokku/dokku-postgres.git
     dokku postgres:create yourappname-database
-    sudo dokku plugin:install https://github.com/dokku/dokku-redis.git redis
-    dokku redis:create yourappname-redis
-    dokku postgres:link yourappname-database yourappname
-    dokku redis:link yourappname-redis yourappname    
+    dokku postgres:link yourappname-database yourappname   
 
 Grant the `dokku` user ssh permission:
 
@@ -130,12 +127,12 @@ Procfile:
 
     web: mix phoenix.server
 
-From your app:  
+From your Vultr VM:  
   
     dokku config:set SECRET_KEY_BASE="`mix phoenix.gen.secret`"
     dokku config:set MIX_ENV=prod
     dokku config:set PORT=5000
-    dokku domains:add yourappname.com
+    dokku domains:add yourappname domainname
     
 
 ## SSL 
