@@ -76,14 +76,17 @@ Create a new file in your repo called `.buildpacks`:
 
 Also create `elixir_buildpack.config`:
 
-    erlang_version=18.2.1
-    elixir_version=1.3.1
-    config_vars_to_export=(DATABASE_URL SECRET_KEY_BASE)
+    elixir_version=1.9.4
+    erlang_version=22.2.1
 
 And `phoenix_static_buildpack.config`:
 
-    node_version=5.3.0
-    npm_version=2.10.1
+    phoenix_relative_path=.
+    node_version=10.16.3
+    npm_version=6.12.0
+    yarn_version=1.19.1
+
+    clean_cache=false
     
 > **Note**: you do not need the phoenix static buildpack if you do not have assets (i.e., this is a REST API or you compiled your assets elsewhere).
 
