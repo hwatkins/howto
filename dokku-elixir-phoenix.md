@@ -2,10 +2,10 @@
 
 Create a new Digital Ocean box:
 
-* Ubuntu 16.04
-* 10$ per month / 1GB / 1 CPU
-* NY3
-* Backups (do not choose IPv6)
+* Ubuntu 18.04 x64
+* $5 per month / 1GB / 1 CPU
+* Atlanta location (or what ever is closest)
+* $2 per month Auto Backups (do not choose IPv6)
 * Add SSH key
 
 ![](https://rpl.cat/uploads/LMEqcxZ0H2HhEfcdK2ojJKBe77PzGv7hD37FhvxkrH4/public.png)
