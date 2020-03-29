@@ -51,10 +51,6 @@ Next run these dokku commands (still SSH as `deploy`):
     sudo dokku plugin:install https://github.com/dokku/dokku-postgres.git
     dokku postgres:create yourappname-database
     dokku postgres:link yourappname-database yourappname   
-
-Grant the `dokku` user ssh permission:
-
-    sudo usermod -a -G ssh-user dokku
         
 ## Phoenix setup
 
