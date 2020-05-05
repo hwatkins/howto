@@ -1,0 +1,1 @@
+https://askalmanac.com/
